@@ -174,7 +174,7 @@ var readAllImages = function (gitbook) {
       promises.push(pageText.then(function (pageContent) {
         var pageImages = [];
 
-        var reg = new RegExp(/!\[(.*?)\]\((.*?)(?:\s+"(.*)")?\)/gmi);
+        var reg = new RegExp(/!\[(.*?)\](\((.*?)(?:\s+"(.*)")?\)|\[(.*?)(?:\s+"(.*)")?\])/gmi);
         var result;
 
         var index = 1;
